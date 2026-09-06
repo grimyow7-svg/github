@@ -9,8 +9,9 @@ const API_URL = 'https://api.ejemplo.com/v1';
 // ==========================================
 
 function getUser(id) {
-    console.log('Obteniendo usuario:', id);
-    return { id, name: 'Usuario Ejemplo' };
+    console.log('🔄 Obteniendo usuario con ID:', id);
+    const user = { id, name: 'Usuario Ejemplo', role: 'admin' };
+    return user;
 }
 
 function saveUser(user) {
