@@ -1,0 +1,28 @@
+// ==========================================
+// CONFIGURACIÓN INICIAL
+// ==========================================
+
+const API_URL = 'https://api.ejemplo.com/v1';
+
+// ==========================================
+// FUNCIONES PRINCIPALES
+// ==========================================
+
+function getUser(id) {
+    console.log('Obteniendo usuario:', id);
+    return { id, name: 'Usuario Ejemplo' };
+}
+
+function saveUser(user) {
+    console.log('Guardando usuario:', user);
+    return { ...user, saved: true };
+}
+
+// ==========================================
+// EXPORTAR FUNCIONES
+// ==========================================
+
+module.exports = {
+    getUser,
+    saveUser
+};
