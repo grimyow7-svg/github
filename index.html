@@ -19,11 +19,16 @@ function saveUser(user) {
     return { ...user, saved: true };
 }
 
+function editUser(id) {
+    console.log("Aqui va un proceso");
+}
+
 // ==========================================
 // EXPORTAR FUNCIONES
 // ==========================================
 
 module.exports = {
     getUser,
-    saveUser
+    saveUser,
+    editUser
 };
